@@ -28,8 +28,8 @@ class Loading(db.Model):
         return '<id {}>'.format(self.id)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def hello():
+    return "Hello World!"
 
 
 @app.route('/floor_loading', methods=['POST', 'GET'])
